@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo {
+  text-align: center;
+  font-family: elephant;
+  padding: 10px;
+  color: rgb(124, 60, 124);
+}
+
+
+.container {
+  width: 90%;
+  margin: auto;
+  height: 70vh;
+  padding: 33px;
+  overflow-y: auto;
+  margin-bottom: 23px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(121, 221, 146);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  background-color: rgb(203, 167, 248);
+  max-width: 40%;
+  padding: 10px;
+  margin: 6px 3px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(230, 209, 255);
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.center {
+  align-self: center;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+#messageForm {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+#messageInp {
+  flex-grow: 1;
+  padding: 0 10px;
+  outline: none;
+  border: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+#messageForm:focus {
+  outline: 1px solid rgb(124, 60, 124);
+}
+
+#sendBtn {
+  cursor: pointer;
+  background: rgb(184, 126, 255);
+  border: none;
+  padding: 0.5rem 0.5rem 0.3rem;
+  border-radius: 0 20px 20px 0;
+}
+#sendBtn img {
+  width: 32px;
+}
+
+#sendBtn:hover {
+  background-color: rgb(192, 130, 192);
+  transition: all ease-in 0.3s;
+}
+body {
+  background: linear-gradient(to bottom, white, rgb(148, 206, 148));
+  height: 100vh;
+}
+
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .message {
+    max-width: 70%;
+  }
+  .container {
+    padding: 20px 10px;
+  }
+}
